@@ -1,7 +1,7 @@
 <template>
     <div class="card-song text-center">
       <img :src="Img" :alt="Author" />
-      <h6 class="text-uppercase pt-2">{{ Title }}</h6>
+      <h6 class="text-uppercase pt-2 text-white">{{ Title }}</h6>
       <p class="lv-color m-0">{{ Author }}</p>
       <p class="lv-color m-0">{{ Year }}</p>
     </div>

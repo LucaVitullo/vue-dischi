@@ -64,10 +64,6 @@ main{
     background-color: #1e2d3b;
     width: 70%;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap:1rem;
 
 }
 
