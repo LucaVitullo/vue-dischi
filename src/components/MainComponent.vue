@@ -1,13 +1,17 @@
 <template>
-    <main class="d-flex flex-wrap justify-content-center p-3">
-        <CardSong
-            :key="index"
-            v-for="(song,index) in songs"
-            :Img="song.poster"
-            :Title="song.title"
-            :Author="song.author"
-            :Year="song.year"
-        />
+    <main class="pt-5">
+        <div class="container d-flex flex-wrap justify-content-center gap-4">
+            <CardSong
+                :key="index"
+                v-for="(song,index) in songs"
+                :Img="song.poster"
+                :Title="song.title"
+                :Author="song.author"
+                :Year="song.year"
+            />
+
+        </div>
+
 
     </main>
 </template>
@@ -58,6 +62,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap:1rem;
 
 }
 

@@ -1,6 +1,6 @@
 <template>
     <header>
-        <img class="p-2 " :src="logo" :alt="logo">
+        <img class="p-1 " :src="logo" :alt="logo">
     </header>
 </template>
 

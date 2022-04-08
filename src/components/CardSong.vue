@@ -1,12 +1,10 @@
 <template>
-  <div class="">
-    <div class="card-song">
+    <div class="card-song text-center">
       <img :src="Img" :alt="Author" />
-      <h3 class="fs-6">{{ Title }}</h3>
-      <p>{{ Author }}</p>
-      <p>{{ Year }}</p>
+      <h6 class="text-uppercase pt-2">{{ Title }}</h6>
+      <p class="lv-color m-0">{{ Author }}</p>
+      <p class="lv-color m-0">{{ Year }}</p>
     </div>
-  </div>
 </template>
 
 <script>
@@ -26,15 +24,18 @@ export default {
 <style lang="scss" scoped >
 .card-song {
   color: white;
-  width: 200px;
+  width: 180px;
   background-color: #2e3a46;
+  padding: 1rem;
 
 
+.lv-color{
+    color: #71716c;
+}
 img {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
-
   }
 }
 </style>
