@@ -37,5 +37,8 @@ img {
     aspect-ratio: 1/1;
     object-fit: cover;
   }
+  &:hover{
+    transform: scale(1.1);
+  }
 }
 </style>
