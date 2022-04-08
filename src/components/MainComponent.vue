@@ -1,6 +1,6 @@
 <template>
     <main class="pt-5">
-        <div class="container d-flex flex-wrap justify-content-center gap-4">
+        <div v-if="songs.length > 0" class="container d-flex flex-wrap justify-content-center gap-4">
             <CardSong
                 :key="index"
                 v-for="(song,index) in songs"
@@ -11,6 +11,9 @@
             />
 
         </div>
+        <div v-else>
+            <LoadingComponent/>
+        </div>
 
 
     </main>
@@ -20,6 +23,7 @@
 
 import CardSong from "@/components/CardSong.vue"
 import axios from "axios"
+import LoadingComponent from "@/components/LoadingComponent.vue"
 
 
 export default {
@@ -27,6 +31,7 @@ export default {
 
     components:{
         CardSong,
+        LoadingComponent,
     },
     data() {
         return {
@@ -42,7 +47,7 @@ export default {
             axios.get("https://flynn.boolean.careers/exercises/api/array/music")
             .then((response)=>{
                 this.songs=response.data.response
-                console.log(this.songs)
+                //console.log(this.songs)
 
             });
         },
