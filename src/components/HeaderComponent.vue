@@ -1,6 +1,6 @@
 <template>
     <header>
-        <img :src="logo" :alt="logo">
+        <img class="p-2 " :src="logo" :alt="logo">
     </header>
 </template>
 
@@ -24,7 +24,7 @@ export default {
 <style lang= 'scss'>
 
 header{
-    background-color: black;
+    background-color: #2e3a46;
 }
 header img{
     width: 50px;

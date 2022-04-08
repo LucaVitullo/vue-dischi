@@ -15,13 +15,17 @@ export default {
   components: {
     HeaderComponent,
     MainComponent,
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss">
 
 @import '@/style/general';
+
+body{
+  background-color: #1e2d3b;
+}
 
 
 </style>
