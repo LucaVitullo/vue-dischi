@@ -27,6 +27,8 @@ export default {
   width: 180px;
   background-color: #2e3a46;
   padding: 1rem;
+  cursor: pointer;
+  
 
 
 .lv-color{

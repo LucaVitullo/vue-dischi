@@ -11,7 +11,7 @@
             />
 
         </div>
-        <div v-else>
+        <div v-else class="d-flex justify-content-center">
             <LoadingComponent/>
         </div>
 
