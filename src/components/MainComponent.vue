@@ -1,6 +1,8 @@
 <template>
-    <main class="pt-5">
-        <div v-if="songs.length > 0" class="container d-flex flex-wrap justify-content-center gap-4">
+    <main class="pt-5 ">
+        <SearchGender/>
+
+        <div v-if="songs.length > 0" class="container d-flex flex-wrap justify-content-center gap-4 pt-2">
             <CardSong
                 :key="index"
                 v-for="(song,index) in songs"
@@ -24,6 +26,7 @@
 import CardSong from "@/components/CardSong.vue"
 import axios from "axios"
 import LoadingComponent from "@/components/LoadingComponent.vue"
+import SearchGender from "@/components/SearchGender.vue"
 
 
 export default {
@@ -32,6 +35,7 @@ export default {
     components:{
         CardSong,
         LoadingComponent,
+        SearchGender,
     },
     data() {
         return {
@@ -51,6 +55,7 @@ export default {
 
             });
         },
+
     },
 
 
@@ -67,6 +72,9 @@ main{
 
 }
 
+.lv{
+    width: 175px;
+}
 
 
 
