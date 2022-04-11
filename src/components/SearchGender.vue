@@ -1,8 +1,8 @@
 <template>
     <div>
-        <div class="text-center p-2">
-            <select class="p-1">
-                <option value="">All</option>
+        <div class="text-center p-3">
+            <select class="p-1" @change="$emit('search', mostraGenere($event))">
+                <option value="All">All</option>
                 <option value="Rock">Rock</option>
                 <option value="Pop">Pop</option>
                 <option value="Jazz">Jazz</option>
@@ -15,11 +15,12 @@
 <script>
 export default {
   name: "SearchGender",
-  data() {
-        return {
-            SelectedGender: " ",
-        };
-     },
+    methods:{
+        mostraGenere(event){
+            return event.target.value;
+        },
+
+    },
 };
 </script>
 

@@ -24,7 +24,7 @@ export default {
 <style lang="scss" scoped >
 .card-song {
   color: white;
-  width: 180px;
+  width: 175px;
   background-color: #2e3a46;
   padding: 1rem;
   cursor: pointer;
